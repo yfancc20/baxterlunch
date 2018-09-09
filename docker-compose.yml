@@ -1,0 +1,20 @@
+web:
+    image: nginx:latest
+    ports:
+        - "8080:80"
+    volumes:
+        - ./src:/code
+        - ./site.conf:/etc/nginx/conf.d/site.conf
+    links:
+        - php
+        - sass
+php:
+    image: php:7-fpm
+    volumes:
+        - ./src:/code
+
+sass:
+    image: ubuntudesign/sass
+    volumes:
+        - ./src:/code
+    command: sass --watch /code/scss:/code/css

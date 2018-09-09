@@ -1,0 +1,100 @@
+/*******************
+ * Header
+ *******************/
+body, html {
+  font-size: 10px;
+  font-family: Arial;
+  width: 100%; }
+
+.header {
+  background-color: #17468c;
+  width: 100%;
+  height: 85px; }
+  .header .logo {
+    color: white;
+    font-style: italic; }
+    .header .logo h1 {
+      font-weight: 800;
+      font-size: 3.5rem;
+      letter-spacing: 0.1em; }
+
+.wrapper {
+  margin-top: -10px; }
+
+.wrapper.index {
+  background-image: url("/img/index_bg1.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top -35px left 0;
+  overflow: hidden; }
+  .wrapper.index .welcome {
+    position: relative; }
+    .wrapper.index .welcome img {
+      width: 100%; }
+    .wrapper.index .welcome .content {
+      display: table;
+      position: absolute;
+      top: 47%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%); }
+      .wrapper.index .welcome .content .title, .wrapper.index .welcome .content .date {
+        font-size: 2.7rem;
+        margin-top: 0.5rem;
+        font-weight: 600;
+        letter-spacing: -0.05rem; }
+      .wrapper.index .welcome .content .title {
+        color: #192d85; }
+      .wrapper.index .welcome .content .date {
+        background-color: #e69837;
+        display: table;
+        color: white; }
+  .wrapper.index .info {
+    margin-top: 28px;
+    background-image: url("/img/index_bg2.png");
+    background-size: 100% 118%;
+    background-repeat: no-repeat;
+    padding: 15px 15%;
+    padding-bottom: 18%;
+    overflow: hidden; }
+    .wrapper.index .info .remind p {
+      font-size: 1.8rem; }
+    .wrapper.index .info .remind h2 {
+      font-size: 2.2rem; }
+    .wrapper.index .info .box {
+      z-index: 500;
+      width: 150%;
+      height: 150%;
+      margin-left: -50%;
+      background-color: #fff;
+      border: 1px solid #444; }
+
+.wrapper.menu {
+  background-image: url("/img/general_bg.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding-top: 10vh;
+  min-height: calc(100vh - 85px - 85px); }
+  .wrapper.menu .circles {
+    position: relative; }
+    .wrapper.menu .circles img.bg {
+      width: 85%; }
+    .wrapper.menu .circles img.top {
+      position: absolute; }
+      .wrapper.menu .circles img.top.agenda {
+        width: 58%;
+        top: -6%;
+        left: 21%; }
+      .wrapper.menu .circles img.top.speaker {
+        width: 45%;
+        top: 45%;
+        left: 0%; }
+      .wrapper.menu .circles img.top.aki {
+        width: 43%;
+        top: 71%;
+        left: 47%; }
+
+.footer {
+  height: 85px; }
+  .footer .icon {
+    width: 6rem; }

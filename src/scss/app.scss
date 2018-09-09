@@ -1,0 +1,151 @@
+/*******************
+ * Header
+ *******************/
+
+$color-header: #17468C;
+$color-title: #192D85;
+$color-orange: #E69837;
+$color-banner: #347FC5;
+$color-font: #3173B4;
+$color-green: #64B49C;
+$color-gray: #8C8C8C;
+$color-dark: #5A5858;
+
+$header-height: 85px;
+$footer-height: 85px;
+
+body, html {
+	font-size: 10px;
+	font-family: Arial;
+	width: 100%;
+}
+
+.header {
+	background-color: $color-header;
+	width: 100%;
+	height: $header-height;
+
+	.logo {
+		color: white;
+		font-style: italic;
+
+		h1 {
+			font-weight: 800;
+			font-size: 3.5rem;
+			letter-spacing: 0.1em;
+		}
+	}
+}
+
+.wrapper {
+	margin-top: -10px;
+}
+
+.wrapper.index {
+	background-image: url("/img/index_bg1.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: top -35px left 0;
+	overflow: hidden;
+
+	.welcome {
+		position: relative;
+		img {
+			width: 100%;
+		}
+		.content {
+			display: table;
+			position: absolute;
+            top: 47%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+
+            .title, .date {
+				font-size: 2.7rem;
+				margin-top: 0.5rem;
+				font-weight: 600;
+				letter-spacing: -0.05rem;
+			}
+			.title {
+				color: $color-title;
+			}
+
+			.date {
+				background-color: $color-orange;
+				display: table;
+				color: white;
+			}
+		}
+	}
+	.info {
+		margin-top: 28px;
+		background-image: url("/img/index_bg2.png");
+		background-size: 100% 118%;
+		background-repeat: no-repeat;
+		padding: 15px 15%;
+		padding-bottom: 18%;
+		overflow: hidden;
+
+		.remind {
+			p {
+				font-size: 1.8rem;
+			}
+
+			h2 {
+				font-size: 2.2rem;
+			}
+		}
+
+		.box {
+			z-index: 500;
+			width: 150%;
+			height: 150%;
+			margin-left: -50%;
+			background-color: #fff;
+			border: 1px solid #444;
+		}
+	}
+}
+
+.wrapper.menu {
+	background-image: url("/img/general_bg.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	padding-top: 10vh;
+	min-height: calc(100vh - #{$header-height} - #{$footer-height});
+
+	.circles {
+		position: relative;
+		img.bg {
+			width: 85%;
+		}
+		
+
+        img.top {
+        	position: absolute;
+        	&.agenda {
+        		width: 58%;
+        		top: -6%;
+        		left: 21%;
+        	}
+        	&.speaker {
+        		width: 45%;
+        		top: 45%;
+        		left: 0%;
+        	}
+        	&.aki {
+        		width: 43%;
+        		top: 71%;
+        		left: 47%;
+        	}
+        }
+	}
+}
+
+.footer {
+	height: $footer-height;
+	.icon {
+		width: 6rem;
+	}
+}
