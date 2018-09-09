@@ -16,41 +16,67 @@ body, html {
 .super {
   vertical-align: super; }
 
-.title, .title-sm, .title-xs {
+.title, .title-sm, .title-xs, .title-md {
   color: #17468c;
   font-weight: 700;
   font-size: 2.7rem;
   letter-spacing: -0.07rem; }
-  .title .super, .title-sm .super, .title-xs .super {
+  .title .super, .title-sm .super, .title-xs .super, .title-md .super {
     font-size: 1.5rem; }
 
-.title-xs {
-  font-size: 1.6rem; }
+.title-md {
+  font-size: 2.2rem; }
 
 .title-sm {
   font-size: 1.8rem; }
+
+.title-xs {
+  font-size: 1.6rem;
+  letter-spacing: -0.04rem; }
 
 .text {
   font-weight: 700;
   font-size: 1.5rem;
   letter-spacing: -0.04rem; }
 
-.title.blue, .title-sm.blue, .text.blue, .title-xs.blue {
+.text-sm {
+  font-size: 1.3rem; }
+
+.title.blue, .title-sm.blue, .text.blue, .title-xs.blue, .title-md.blue, .text-sm.blue {
   color: #347fc5 !important; }
-.title.gray, .title-sm.gray, .text.gray, .title-xs.gray {
+.title.gray, .title-sm.gray, .text.gray, .title-xs.gray, .title-md.gray, .text-sm.gray {
   color: #5a5858 !important; }
-.title.light-blue, .title-sm.light-blue, .text.light-blue, .title-xs.light-blue {
+.title.light-blue, .title-sm.light-blue, .text.light-blue, .title-xs.light-blue, .title-md.light-blue, .text-sm.light-blue {
   color: #3173b4 !important; }
-.title.light-gray, .title-sm.light-gray, .text.light-gray, .title-xs.light-gray {
+.title.light-gray, .title-sm.light-gray, .text.light-gray, .title-xs.light-gray, .title-md.light-gray, .text-sm.light-gray {
   color: #8c8c8c !important; }
-.title.green, .title-sm.green, .text.green, .title-xs.green {
+.title.green, .title-sm.green, .text.green, .title-xs.green, .title-md.green, .text-sm.green {
   color: #64b49c !important; }
+
+.banner {
+  margin-bottom: 0.5rem;
+  padding: 0.1rem 2rem;
+  background-color: #347fc5;
+  -moz-box-shadow: 0 5px 10px -4px rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 0 5px 10px -4px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 5px 10px -4px rgba(0, 0, 0, 0.8); }
+  .banner .title {
+    font-size: 2rem;
+    color: white;
+    letter-spacing: 0; }
 
 .dot-line {
   height: 1px;
   background-image: linear-gradient(to right, #8c8c8c 33%, rgba(255, 255, 255, 0) 0%);
   background-position: bottom;
   background-size: 5px 10px;
+  background-repeat: repeat-x; }
+
+.dot-line-green {
+  height: 5px;
+  background-image: linear-gradient(to right, #64b49c 33%, rgba(255, 255, 255, 0) 0%);
+  background-position: bottom;
+  background-size: 13px 10px;
   background-repeat: repeat-x; }
 
 /*******************
@@ -157,17 +183,50 @@ body, html {
       font-size: 1.3rem;
       font-weight: 300;
       margin-top: -0.2rem; }
-  .wrapper.agenda .banner {
-    margin-bottom: 0.5rem;
-    padding: 0.1rem 2rem;
-    background-color: #347fc5;
-    -moz-box-shadow: 0 5px 10px -4px rgba(0, 0, 0, 0.8);
-    -webkit-box-shadow: 0 5px 10px -4px rgba(0, 0, 0, 0.8);
-    box-shadow: 0 5px 10px -4px rgba(0, 0, 0, 0.8); }
-    .wrapper.agenda .banner .title {
-      font-size: 2rem;
-      color: white;
-      letter-spacing: 0; }
+
+/*******************
+ * Speaker
+ *******************/
+.wrapper.speaker {
+  background-image: url("/img/general_bg.jpg");
+  background-size: 100% 115%;
+  background-repeat: no-repeat;
+  min-height: calc(100vh - 85px + 15px); }
+  .wrapper.speaker .content {
+    padding: 2rem;
+    padding-top: 1rem; }
+    .wrapper.speaker .content.top {
+      padding-top: 3rem; }
+    .wrapper.speaker .content .more img {
+      width: 100%; }
+    .wrapper.speaker .content .bottom-line .dot-line-green {
+      position: absolute;
+      top: calc(50% - 2.5px);
+      left: 0;
+      width: 100%; }
+
+.wrapper.speaker-each {
+  background-image: url("/img/general_bg.jpg");
+  background-size: 100% 115%;
+  background-repeat: no-repeat;
+  min-height: calc(100vh - 85px + 15px); }
+  .wrapper.speaker-each .content {
+    padding: 2rem;
+    padding-top: 1rem; }
+    .wrapper.speaker-each .content.top {
+      padding-top: 2.5rem;
+      padding-bottom: 0.5rem; }
+    .wrapper.speaker-each .content .more img {
+      width: 100%; }
+    .wrapper.speaker-each .content .bottom-line .dot-line-green {
+      position: absolute;
+      top: calc(50% - 2.5px);
+      left: 0;
+      width: 100%; }
+    .wrapper.speaker-each .content .list {
+      vertical-align: top; }
+  .wrapper.speaker-each .speaker-cv img {
+    height: 3rem; }
 
 /*******************
  * Menu

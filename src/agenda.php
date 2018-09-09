@@ -1,6 +1,4 @@
 <?php
-	$page = $_GET['page'] ?: 1;
-
 	$topics = [
 		[
 			'title' => 'Why CRRT?',
