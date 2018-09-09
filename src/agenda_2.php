@@ -1,4 +1,6 @@
 <?php
+	$prev = 'agenda.php';
+	
 	$topics = [
 		'9.22' => [
 			[

@@ -1,4 +1,7 @@
 <?php
+	$prev = 'menu.php';
+	$next = 'agenda_2.php';
+	
 	$topics = [
 		[
 			'title' => 'Why CRRT?',

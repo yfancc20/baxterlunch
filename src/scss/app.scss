@@ -361,7 +361,15 @@ body, html {
  *******************/
 .footer {
 	height: $footer-height;
-	.icon {
-		width: 6rem;
+	a {
+		&.disabled {
+			visibility: hidden;
+			pointer-events: none;
+   			cursor: default;
+		}
+		.icon {
+			width: 6rem;
+			
+		}
 	}
 }

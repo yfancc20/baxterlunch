@@ -1,21 +1,26 @@
 <?php
+	$prev = 'menu.php';
 
 	$speakers = [
 		[
 			'name' => 'Prof. Mark Marshall',
-			'experience' => 'Asia Pacific Baxter Healthcare'
+			'experience' => 'Asia Pacific Baxter Healthcare',
+			'link' => 'speaker1-1.php'
 		],
 		[
 			'name' => 'Prof. Ashita Tolwani',
-			'experience' => 'University of Alabama Birmingham, USA'
+			'experience' => 'University of Alabama Birmingham, USA',
+			'link' => 'speaker2-1.php'
 		],
 		[
 			'name' => 'Prof. Patrick Honoré',
-			'experience' => 'Brugmann University Hospital, Belgium'
+			'experience' => 'Brugmann University Hospital, Belgium',
+			'link' => 'speaker3-1.php'
 		],
 		[
 			'name' => 'Dr. Ling Zhang',
-			'experience' => 'Department of Nephrology, <br> West China Hostpital of Sichuan University'
+			'experience' => 'Department of Nephrology, <br> West China Hostpital of Sichuan University',
+			'link' => 'speaker4-1.php'
 		],
 	];
 ?>
@@ -49,7 +54,9 @@
 							<div class="dot-line-green"></div>
 						</div>
 						<div class="col-3 more px-0">
-							<img src="img/button-more.png">
+							<a href="<?=$speaker['link']?>">
+								<img src="img/button-more.png">
+							</a>
 						</div>
 					</div>
 				</div>

@@ -1,4 +1,7 @@
 <?php
+	$prev = 'speaker_cv.php';
+	$next = 'speaker1-2.php';
+
 	$name = 'Prof. Mark Marshall';
 	$exp1 = [
 		'items' => [

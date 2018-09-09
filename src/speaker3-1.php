@@ -1,4 +1,7 @@
 <?php
+	$prev = 'speaker_cv.php';
+	$next = 'speaker3-2.php';
+	
 	$name = 'Prof. Patrick Honoré, MD, PhD, FCCM';
 	$exp1 = [
 		'items' => [

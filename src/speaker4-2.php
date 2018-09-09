@@ -1,4 +1,6 @@
 <?php
+	$prev = 'speaker4-1.php';
+	
 	$name = 'Dr. Ling Zhang, MD';
 	$exp2 = [
 		'items' => [
@@ -58,7 +60,9 @@
 				<? } ?>
 			</div>
 			<div class="speaker-cv text-right">
-				<img src="/img/button-cv.png">
+				<a href="speaker_cv.php">
+					<img src="/img/button-cv.png">
+				</a>
 			</div>
 		</div>
 	</div>

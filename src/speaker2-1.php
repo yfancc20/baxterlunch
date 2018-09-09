@@ -1,4 +1,7 @@
 <?php
+	$prev = 'speaker_cv.php';
+	$next = 'speaker2-2.php';
+
 	$name = 'Prof. Ashita Tolwani';
 	$exp1 = [
 		'title' => 'Society Memberships',
