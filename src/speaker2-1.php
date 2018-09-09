@@ -59,7 +59,7 @@
 										<td><p class="text-sm blue mb-0 font-weight-bold"><?php echo $item?></p></td>
 									</tr>
 								</table>
-							<? } ?>
+							<?php } ?>
 						</div>
 						<div class="col-4 px-0">
 							<div class="photo">

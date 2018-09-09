@@ -21,14 +21,14 @@
 				'name' => 'Prof. Patrick Honoré',
 			]
 		],
-	]
+	];
 ?>
 
 <!DOCTYPE html>
 <html>
 <head>
 	
-<? require_once('components/head.php') ?>
+<?php include_once 'components/head.php'; ?>
 
 <title>Baxter</title>
 
@@ -98,6 +98,6 @@
 		</div>
 	</div>
 
-	<? require_once('components/footer.php'); ?>
+	<?php include_once 'components/footer.php'; ?>
 </body>
 </html>
