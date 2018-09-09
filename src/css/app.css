@@ -17,16 +17,15 @@ body, html {
   vertical-align: super; }
 
 .title, .title-sm {
+  color: #17468c;
   font-weight: 700;
-  font-size: 2.7rem; }
+  font-size: 2.7rem;
+  letter-spacing: -0.07rem; }
   .title .super, .title-sm .super {
     font-size: 1.5rem; }
 
-.title, .title-sm {
-  letter-spacing: -0.07rem; }
-
 .title-sm {
-  font-size: 2rem; }
+  font-size: 1.8rem; }
 
 .text {
   font-weight: 700;
@@ -103,23 +102,59 @@ body, html {
       background-color: #fff;
       border: 1px solid #444; }
 
+/*******************
+ * Cont & Agenda
+ *******************/
+.wrapper.cont .content, .wrapper.agenda .content {
+  padding: 2rem 0; }
+  .wrapper.cont .content .paragraph, .wrapper.agenda .content .paragraph {
+    padding: 1rem 2rem; }
+    .wrapper.cont .content .paragraph .title.date, .wrapper.agenda .content .paragraph .title.date {
+      color: #64b49c; }
+    .wrapper.cont .content .paragraph .text, .wrapper.agenda .content .paragraph .text {
+      color: #3173b4; }
+
 .wrapper.cont {
   background-image: url("/img/index_bg3.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   min-height: calc(100vh - 85px + 15px); }
-  .wrapper.cont .content {
-    padding: 2rem 0; }
-    .wrapper.cont .content .paragraph {
-      padding: 1rem 2rem; }
-      .wrapper.cont .content .paragraph .title {
-        color: #17468c; }
-        .wrapper.cont .content .paragraph .title.date {
-          color: #64b49c; }
-      .wrapper.cont .content .paragraph .text {
-        color: #3173b4; }
   .wrapper.cont .more img {
     height: 5rem; }
+
+.wrapper.agenda {
+  background-image: url("/img/general_bg.jpg");
+  background-size: 100% 115%;
+  background-repeat: no-repeat;
+  min-height: calc(100vh - 85px + 15px); }
+  .wrapper.agenda .content {
+    padding-bottom: 0; }
+    .wrapper.agenda .content.top .text {
+      margin-top: -0.2rem; }
+    .wrapper.agenda .content ~ .content {
+      padding-top: 0; }
+    .wrapper.agenda .content .paragraph {
+      padding-bottom: 0; }
+    .wrapper.agenda .content .text.blue {
+      font-weight: 500; }
+    .wrapper.agenda .content .text.gray {
+      font-weight: 500;
+      color: #5a5858; }
+    .wrapper.agenda .content .text.small {
+      font-size: 1.3rem;
+      font-weight: 300;
+      margin-top: -0.2rem; }
+  .wrapper.agenda .banner {
+    margin-bottom: 0.5rem;
+    padding: 0.1rem 2rem;
+    background-color: #347fc5;
+    -moz-box-shadow: 0 5px 10px -4px rgba(0, 0, 0, 0.8);
+    -webkit-box-shadow: 0 5px 10px -4px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 5px 10px -4px rgba(0, 0, 0, 0.8); }
+    .wrapper.agenda .banner .title {
+      font-size: 2rem;
+      color: white;
+      letter-spacing: 0; }
 
 /*******************
  * Menu

@@ -39,7 +39,9 @@
 		</div>
 
 		<div class="more text-center">
-			<img src="/img/button-more.png">
+			<a href="menu.php">
+				<img src="/img/button-more.png">
+			</a>
 		</div>
 	</div>
 </body>

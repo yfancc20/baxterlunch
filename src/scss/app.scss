@@ -37,17 +37,16 @@ body, html {
 	vertical-align: super;
 }
 .title, .title-sm {
+	color: $color-header;
 	font-weight: 700;
 	font-size: 2.7rem;
+	letter-spacing: -0.07rem;
 	.super {
 		font-size: 1.5rem;
 	}
 }
-.title, .title-sm {
-	letter-spacing: -0.07rem;
-}
 .title-sm {
-	font-size: 2rem;
+	font-size: 1.8rem;
 }
 .text {
 	font-weight: 700;
@@ -145,15 +144,15 @@ body, html {
 	}
 }
 
-.wrapper.cont {
-	@include background("/img/index_bg3.jpg", 100% 100%);
-	min-height: calc(100vh - #{$header-height} + 15px);
+/*******************
+ * Cont & Agenda
+ *******************/
+.wrapper.cont, .wrapper.agenda {
 	.content {
 		padding: 2rem 0;
 		.paragraph {
 			padding: 1rem 2rem;
 			.title {
-				color: $color-header;
 				&.date {
 					color: $color-green;
 				}
@@ -163,12 +162,67 @@ body, html {
 			}
 		}
 	}
+}
+
+.wrapper.cont {
+	@include background("/img/index_bg3.jpg", 100% 100%);
+	min-height: calc(100vh - #{$header-height} + 15px);
 	.more {
 		img {
 			height: 5rem;
 		}
 	}
 }
+
+ .wrapper.agenda {
+ 	@include background("/img/general_bg.jpg", 100% 115%);
+ 	min-height: calc(100vh - #{$footer-height} + 15px);
+ 	.content {
+ 		padding-bottom: 0;
+ 		&.top {
+ 			.text {
+ 				margin-top: -0.2rem;
+ 			}
+ 		}
+		& ~ .content {
+			padding-top: 0;
+		}
+		.paragraph {
+			padding-bottom: 0;
+		}
+		.text {
+			&.blue {
+				font-weight: 500;
+			}
+			&.gray {
+				font-weight: 500;
+				color: $color-dark;
+			}
+			&.small {
+				font-size: 1.3rem;
+				font-weight: 300;
+     			margin-top: -0.2rem;
+			}
+		}
+ 	}
+
+	.banner {
+		margin-bottom: 0.5rem;
+		padding: 0.1rem 2rem;
+		background-color: $color-banner;
+		-moz-box-shadow: 0 5px 10px -4px rgba(black, 0.8);
+		-webkit-box-shadow: 0 5px 10px -4px rgba(black, 0.8);
+		box-shadow: 0 5px 10px -4px rgba(black, 0.8);
+		.title {
+			font-size: 2rem;
+			color: white;
+			letter-spacing: 0;
+		}
+	}
+ }
+
+
+
 
 /*******************
  * Menu
