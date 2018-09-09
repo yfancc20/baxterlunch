@@ -6,11 +6,39 @@
  *******************/
 body, html {
   font-size: 10px;
-  font-family: "Helvetica Neue", Arial;
-  width: 100%; }
+  font-family: "Helvetica Narrow", Arial;
+  width: 100%;
+  height: 100%; }
 
 .wrapper {
   margin-top: -10px; }
+
+.super {
+  vertical-align: super; }
+
+.title, .title-sm {
+  font-weight: 700;
+  font-size: 2.7rem; }
+  .title .super, .title-sm .super {
+    font-size: 1.5rem; }
+
+.title, .title-sm {
+  letter-spacing: -0.07rem; }
+
+.title-sm {
+  font-size: 2rem; }
+
+.text {
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: -0.04rem; }
+
+.dot-line {
+  height: 1px;
+  background-image: linear-gradient(to right, #8c8c8c 33%, rgba(255, 255, 255, 0) 0%);
+  background-position: bottom;
+  background-size: 5px 10px;
+  background-repeat: repeat-x; }
 
 /*******************
  * Header
@@ -48,19 +76,13 @@ body, html {
       transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%); }
       .wrapper.index .welcome .content .title, .wrapper.index .welcome .content .date {
-        font-size: 2.7rem;
-        margin-top: 0.5rem;
-        font-weight: 500;
-        letter-spacing: -0.05rem; }
+        margin-top: 0.5rem; }
       .wrapper.index .welcome .content .title {
         color: #192d85; }
-      .wrapper.index .welcome .content .date {
-        background-color: #e69837;
-        display: table;
-        color: white; }
-        .wrapper.index .welcome .content .date span {
-          vertical-align: super;
-          font-size: 1.5rem; }
+        .wrapper.index .welcome .content .title.date {
+          background-color: #e69837;
+          display: table;
+          color: white; }
   .wrapper.index .info {
     margin-top: 28px;
     background-image: url("/img/index_bg2.png");
@@ -80,6 +102,24 @@ body, html {
       margin-left: -50%;
       background-color: #fff;
       border: 1px solid #444; }
+
+.wrapper.cont {
+  background-image: url("/img/index_bg3.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  min-height: calc(100vh - 85px + 15px); }
+  .wrapper.cont .content {
+    padding: 2rem 0; }
+    .wrapper.cont .content .paragraph {
+      padding: 1rem 2rem; }
+      .wrapper.cont .content .paragraph .title {
+        color: #17468c; }
+        .wrapper.cont .content .paragraph .title.date {
+          color: #64b49c; }
+      .wrapper.cont .content .paragraph .text {
+        color: #3173b4; }
+  .wrapper.cont .more img {
+    height: 5rem; }
 
 /*******************
  * Menu

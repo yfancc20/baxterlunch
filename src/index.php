@@ -19,7 +19,7 @@
 				<br>
 				<h3 class="title">Meet-the-Expert Sessions</h3>
 
-				<h3 class="date mt-4 px-3 py-2 mx-auto">
+				<h3 class="title date mt-4 px-3 py-2 mx-auto">
 					22<span>nd</span> - 23<span>rd</span> Sep 2018
 				</h3>
 			</div>

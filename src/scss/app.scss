@@ -13,17 +13,53 @@ $color-dark: #5A5858;
 $header-height: 85px;
 $footer-height: 85px;
 
+@mixin background($path, $size: 100%) {
+	background-image: url($path);
+	background-size: $size;
+	background-repeat: no-repeat;
+}
+
+
 
 /*******************
  * General
  *******************/
 body, html {
 	font-size: 10px;
-	font-family: "Helvetica Neue", Arial;
+	font-family: "Helvetica Narrow", Arial;
 	width: 100%;
+	height: 100%;
 }
 .wrapper {
 	margin-top: -10px;
+}
+.super {
+	vertical-align: super;
+}
+.title, .title-sm {
+	font-weight: 700;
+	font-size: 2.7rem;
+	.super {
+		font-size: 1.5rem;
+	}
+}
+.title, .title-sm {
+	letter-spacing: -0.07rem;
+}
+.title-sm {
+	font-size: 2rem;
+}
+.text {
+	font-weight: 700;
+	font-size: 1.5rem;
+	letter-spacing: -0.04rem;
+}
+.dot-line {
+	height: 1px;
+	background-image: linear-gradient(to right, $color-gray 33%, rgba(255,255,255,0) 0%);
+	background-position: bottom;
+	background-size: 5px 10px;
+	background-repeat: repeat-x;
 }
 
 
@@ -51,9 +87,7 @@ body, html {
  * Index
  *******************/
 .wrapper.index {
-	background-image: url("/img/index_bg1.png");
-	background-size: 100%;
-	background-repeat: no-repeat;
+	@include background("/img/index_bg1.png");
 	background-position: top -35px left 0;
 	overflow: hidden;
 
@@ -71,31 +105,21 @@ body, html {
             -ms-transform: translate(-50%, -50%);
 
             .title, .date {
-				font-size: 2.7rem;
 				margin-top: 0.5rem;
-				font-weight: 500;
-				letter-spacing: -0.05rem;
 			}
 			.title {
 				color: $color-title;
-			}
-
-			.date {
-				background-color: $color-orange;
-				display: table;
-				color: white;
-				span {
-					vertical-align: super;
-    				font-size: 1.5rem;
+				&.date {
+					background-color: $color-orange;
+					display: table;
+					color: white;
 				}
 			}
 		}
 	}
 	.info {
 		margin-top: 28px;
-		background-image: url("/img/index_bg2.png");
-		background-size: 100% 118%;
-		background-repeat: no-repeat;
+		@include background("/img/index_bg2.png", 100% 118%);
 		padding: 15px 15%;
 		padding-bottom: 18%;
 		overflow: hidden;
@@ -121,13 +145,36 @@ body, html {
 	}
 }
 
+.wrapper.cont {
+	@include background("/img/index_bg3.jpg", 100% 100%);
+	min-height: calc(100vh - #{$header-height} + 15px);
+	.content {
+		padding: 2rem 0;
+		.paragraph {
+			padding: 1rem 2rem;
+			.title {
+				color: $color-header;
+				&.date {
+					color: $color-green;
+				}
+			}
+			.text {
+				color: $color-font;
+			}
+		}
+	}
+	.more {
+		img {
+			height: 5rem;
+		}
+	}
+}
+
 /*******************
  * Menu
  *******************/
 .wrapper.menu {
-	background-image: url("/img/general_bg.jpg");
-	background-size: 100%;
-	background-repeat: no-repeat;
+	@include background("/img/general_bg.jpg");
 	padding-top: 10vh;
 	min-height: calc(100vh - #{$header-height} - #{$footer-height});
 
