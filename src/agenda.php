@@ -1,4 +1,6 @@
 <?php
+	$page = $_GET['page'] ?: 1;
+
 	$topics = [
 		[
 			'title' => 'Why CRRT?',
@@ -53,10 +55,10 @@
 						</div>
 						<div class="col-9">
 							<p class="text gray mb-0">Prof. Ravindra Mehta</p>
-							<p class="text gray small">University of California, USA</p>
+							<p class="text light-gray small">University of California, USA</p>
 
 							<p class="text gray mb-0">Prof. Chih-Wei Yang</p>
-							<p class="text gray small">Chang Gung University, ROC</p>
+							<p class="text light-gray small">Chang Gung University, ROC</p>
 						</div>
 					</div>
 				</div>

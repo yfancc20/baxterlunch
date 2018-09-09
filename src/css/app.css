@@ -16,13 +16,16 @@ body, html {
 .super {
   vertical-align: super; }
 
-.title, .title-sm {
+.title, .title-sm, .title-xs {
   color: #17468c;
   font-weight: 700;
   font-size: 2.7rem;
   letter-spacing: -0.07rem; }
-  .title .super, .title-sm .super {
+  .title .super, .title-sm .super, .title-xs .super {
     font-size: 1.5rem; }
+
+.title-xs {
+  font-size: 1.6rem; }
 
 .title-sm {
   font-size: 1.8rem; }
@@ -31,6 +34,17 @@ body, html {
   font-weight: 700;
   font-size: 1.5rem;
   letter-spacing: -0.04rem; }
+
+.title.blue, .title-sm.blue, .text.blue, .title-xs.blue {
+  color: #347fc5 !important; }
+.title.gray, .title-sm.gray, .text.gray, .title-xs.gray {
+  color: #5a5858 !important; }
+.title.light-blue, .title-sm.light-blue, .text.light-blue, .title-xs.light-blue {
+  color: #3173b4 !important; }
+.title.light-gray, .title-sm.light-gray, .text.light-gray, .title-xs.light-gray {
+  color: #8c8c8c !important; }
+.title.green, .title-sm.green, .text.green, .title-xs.green {
+  color: #64b49c !important; }
 
 .dot-line {
   height: 1px;
@@ -138,8 +152,7 @@ body, html {
     .wrapper.agenda .content .text.blue {
       font-weight: 500; }
     .wrapper.agenda .content .text.gray {
-      font-weight: 500;
-      color: #5a5858; }
+      font-weight: 500; }
     .wrapper.agenda .content .text.small {
       font-size: 1.3rem;
       font-weight: 300;
