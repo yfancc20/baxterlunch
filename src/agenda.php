@@ -1,7 +1,7 @@
 <?php
 	$prev = 'menu.php';
 	$next = 'agenda_2.php';
-	
+
 	$topics = [
 		[
 			'title' => 'Why CRRT?',
@@ -26,7 +26,7 @@
 <html>
 <head>
 	
-<? require_once('components/head.php') ?>
+<?php include_once 'components/head.php'; ?>
 
 <title>Baxter</title>
 
@@ -65,29 +65,29 @@
 				</div>
 			</div>
 
-			<?
+			<?php
 				for ($i=0; $i < count($topics); $i++) {
 			?>
 					<div class="dot-line"></div>
 					<div class="paragraph">
-						<div class="title-sm"><?=$topics[$i]['title']?></div>
+						<div class="title-sm"><?php echo $topics[$i]['title']?></div>
 						<div class="container-fluid px-0">
 							<div class="row">
 								<div class="col-3">
 									<p class="text blue">Speaker</p>
 								</div>
 								<div class="col-9">
-									<p class="text gray"><?=$topics[$i]['name']?></p>
+									<p class="text gray"><?php echo $topics[$i]['name']?></p>
 								</div>
 							</div>
 						</div>
 					</div>
-			<?
+			<?php
 				}
 			?>
 		</div>
 	</div>
 
-	<? require_once('components/footer.php'); ?>
+	<?php require_once('components/footer.php'); ?>
 </body>
 </html>

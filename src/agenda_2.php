@@ -1,6 +1,6 @@
 <?php
 	$prev = 'agenda.php';
-	
+
 	$topics = [
 		'9.22' => [
 			[
@@ -52,13 +52,13 @@
 		</div>
 
 		<div class="content">
-			<?
+			<?php
 			$i = 0;
 			foreach ($topics as $date => $content) {
 				$i += 1;
 			?>
 				<div class="paragraph py-0 mt-3">
-					<div class="title blue"><?=$date?></div>
+					<div class="title blue"><?php echo $date?></div>
 				</div>
 
 				<?php
@@ -70,10 +70,10 @@
 						<div class="container-fluid px-0 pt-2">
 							<div class="row">
 								<div class="col-4 pr-0">
-									<p class="text blue"><?=$c['time']?></p>
+									<p class="text blue"><?php echo $c['time']?></p>
 								</div>
 								<div class="col-8">
-									<p class="title-xs mb-0"><?=$c['title']?></p>
+									<p class="title-xs mb-0"><? echo $c['title']?></p>
 								</div>
 							</div>
 							<div class="row">
@@ -81,7 +81,7 @@
 									<p class="text green font-weight-light">Experts to meet</p>
 								</div>
 								<div class="col-8">
-									<p class="text gray mb-0"><?=$c['name']?></p>
+									<p class="text gray mb-0"><?php echo $c['name']?></p>
 								</div>
 							</div>
 						</div>
@@ -90,11 +90,11 @@
 					if ($i < count($topics) || $j < count($content)) {
 				?>
 						<div class="dot-line"></div>
-				<?
+				<?php
 					}
 				}
 				?>
-			<? } ?>
+			<?php } ?>
 		</div>
 	</div>
 

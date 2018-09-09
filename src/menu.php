@@ -6,13 +6,13 @@
 <html>
 <head>
 	
-<?php require_once('components/head.php') ?>
+<?php include_once 'components/head.php'; ?>
 
 <title>Menu</title>
 
 </head>
 <body>
-	<?php require_once('components/header.php') ?>
+	<?php include_once 'components/header.php'; ?>
 
 	<div class="wrapper menu">
 		<div class="circles text-center mx-auto">
@@ -30,6 +30,6 @@
 		</div>
 	</div>
 
-	<? require_once('components/footer.php') ?>
+	<?php include_once 'components/footer.php'; ?>
 </body>
 </html>

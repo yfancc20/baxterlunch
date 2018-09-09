@@ -9,7 +9,7 @@
 </head>
 <body>
 
-	<? include_once 'components/header.php'; ?>
+	<?php include_once 'components/header.php'; ?>
 	<div class="wrapper cont">
 		<div class="content">
 			<div class="paragraph">

@@ -2,14 +2,14 @@
 <html>
 <head>
 	
-<?php require_once('components/head.php') ?>
+<?php include_once 'components/head.php' ?>
 
 <title>Baxter</title>
 
 </head>
 <body>
 
-	<? require_once('components/header.php') ?>
+	<?php include_once 'components/header.php' ?>
 	<div class="wrapper index">
 		<div class="welcome">
 			<img src="img/spin.png">
