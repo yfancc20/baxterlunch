@@ -1,11 +1,20 @@
 /*******************
- * Header
+ * Variables
+ *******************/
+/*******************
+ * General
  *******************/
 body, html {
   font-size: 10px;
-  font-family: Arial;
+  font-family: "Helvetica Neue", Arial;
   width: 100%; }
 
+.wrapper {
+  margin-top: -10px; }
+
+/*******************
+ * Header
+ *******************/
 .header {
   background-color: #17468c;
   width: 100%;
@@ -18,9 +27,9 @@ body, html {
       font-size: 3.5rem;
       letter-spacing: 0.1em; }
 
-.wrapper {
-  margin-top: -10px; }
-
+/*******************
+ * Index
+ *******************/
 .wrapper.index {
   background-image: url("/img/index_bg1.png");
   background-size: 100%;
@@ -41,7 +50,7 @@ body, html {
       .wrapper.index .welcome .content .title, .wrapper.index .welcome .content .date {
         font-size: 2.7rem;
         margin-top: 0.5rem;
-        font-weight: 600;
+        font-weight: 500;
         letter-spacing: -0.05rem; }
       .wrapper.index .welcome .content .title {
         color: #192d85; }
@@ -49,6 +58,9 @@ body, html {
         background-color: #e69837;
         display: table;
         color: white; }
+        .wrapper.index .welcome .content .date span {
+          vertical-align: super;
+          font-size: 1.5rem; }
   .wrapper.index .info {
     margin-top: 28px;
     background-image: url("/img/index_bg2.png");
@@ -69,6 +81,9 @@ body, html {
       background-color: #fff;
       border: 1px solid #444; }
 
+/*******************
+ * Menu
+ *******************/
 .wrapper.menu {
   background-image: url("/img/general_bg.jpg");
   background-size: 100%;
@@ -94,6 +109,9 @@ body, html {
         top: 71%;
         left: 47%; }
 
+/*******************
+ * Footer
+ *******************/
 .footer {
   height: 85px; }
   .footer .icon {
