@@ -9,23 +9,23 @@
 <html>
 <head>
 	
-<? require_once('components/head.php') ?>
+<?php include_once 'components/head.php'; ?>
 
 <title>Baxter</title>
 
 </head>
 <body>
 	<div class="wrapper speaker-each">
-		<? require_once('components/speaker_top.php'); ?>
+		<?php include_once 'components/speaker_top.php'; ?>
 
 		<div class="banner">
-			<span class="title-sm text-white"><?=$name?></span>
+			<span class="title-sm text-white"><?php echo $name?></span>
 		</div>
 
 		<div class="content">
 			<div class="paragraph mt-2">
 				<p class="text-sm blue font-weight-bold">
-					<?=$exp2?>
+					<?php echo $exp2?>
 				</p>
 			</div>
 
@@ -37,6 +37,6 @@
 		</div>
 	</div>
 
-	<? require_once('components/footer.php'); ?>
+	<?php include_once 'components/footer.php'; ?>
 </body>
 </html>

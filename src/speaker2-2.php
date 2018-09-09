@@ -52,7 +52,7 @@
 							<td><p class="text-sm blue mb-0 font-weight-bold"><?php echo $item?></p></td>
 						</tr>
 					</table>
-				<? } ?>
+				<?php } ?>
 			</div>
 			<div class="paragraph mt-3">
 				<h1 class="title-sm mb-0"><?php echo $exp3['title']?></h1>

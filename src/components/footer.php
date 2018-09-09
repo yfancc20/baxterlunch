@@ -21,10 +21,10 @@
 			</a>
 		</div>
 		<div class="page ml-auto d-inline-block">
-			<a href="<?=$prevUrl?>" class="<?=$clickPrev?>" <?=$clickPrev?>>
+			<a href="<?php echo $prevUrl?>" class="<?php echo $clickPrev?>" <?php echo $clickPrev?>>
 				<img src="img/icon-prev.png" class="icon">
 			</a>
-			<a href="<?=$nextUrl?>" class="<?=$clickNext?>" <?=$clickNext?>>
+			<a href="<?php echo $nextUrl?>" class="<?php echo $clickNext?>" <?php echo $clickNext?>>
 				<img src="img/icon-next.png" class="icon">
 			</a>
 		</div>

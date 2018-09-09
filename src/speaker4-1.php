@@ -27,17 +27,17 @@
 <html>
 <head>
 	
-<? require_once('components/head.php') ?>
+<?php include_once 'components/head.php'; ?>
 
 <title>Baxter</title>
 
 </head>
 <body>
 	<div class="wrapper speaker-each">
-		<? require_once('components/speaker_top.php'); ?>
+		<?php include_once 'components/speaker_top.php'; ?>
 
 		<div class="banner">
-			<span class="title"><?=$name?></span>
+			<span class="title"><?php echo $name?></span>
 		</div>
 
 		<div class="content">
@@ -45,8 +45,8 @@
 				<div class="container-fluid px-0">
 					<div class="row">
 						<div class="col-8 pr-0">
-							<p class="text-sm blue"><?=$desc?></p>
-							<h1 class="title-sm mb-0"><?=$exp1['title']?></h1>
+							<p class="text-sm blue"><?php echo $desc?></p>
+							<h1 class="title-sm mb-0"><?php echo $exp1['title']?></h1>
 						</div>
 						<div class="col-4 px-0">
 							<div class="photo">
@@ -58,30 +58,30 @@
 			</div>
 
 			<div class="paragraph mt-0">
-				<? foreach ($exp1['items'] as $item) { ?>
+				<?php foreach ($exp1['items'] as $item) { ?>
 					<table>
 						<tr>
 							<td class="list text-sm blue">●</td>
-							<td><p class="text-sm blue mb-0 font-weight-bold"><?=$item?></p></td>
+							<td><p class="text-sm blue mb-0 font-weight-bold"><?php echo $item?></p></td>
 						</tr>
 					</table>
-				<? } ?>
+				<?php } ?>
 			</div>
 
 			<div class="paragraph mt-3">
-				<h1 class="title-sm mb-0"><?=$exp2['title']?></h1>
-				<? foreach ($exp2['items'] as $item) { ?>
+				<h1 class="title-sm mb-0"><?php echo $exp2['title']?></h1>
+				<?php foreach ($exp2['items'] as $item) { ?>
 					<table>
 						<tr>
 							<td class="list text-sm blue">●</td>
-							<td><p class="text-sm blue mb-0 font-weight-bold"><?=$item?></p></td>
+							<td><p class="text-sm blue mb-0 font-weight-bold"><?php echo $item?></p></td>
 						</tr>
 					</table>
-				<? } ?>
+				<?php } ?>
 			</div>
 		</div>
 	</div>
 
-	<? require_once('components/footer.php'); ?>
+	<?php include_once 'components/footer.php'; ?>
 </body>
 </html>
