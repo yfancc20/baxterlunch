@@ -32,6 +32,7 @@
 				</div>
 				<div class="col-4 qr-code">
 					<div class="box">
+						<img src="img/qrcode.jpg" class="w-100">
 					</div>
 				</div>
 			</div>
