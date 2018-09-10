@@ -1,5 +1,5 @@
 <?php
-	$topics = [
+	$topics2 = [
 		'9.22' => [
 			[
 				'time' => '10:30 - 11:00',
@@ -52,7 +52,7 @@
 		<div class="content">
 			<?php
 			$i = 0;
-			foreach ($topics as $date => $content) {
+			foreach ($topics2 as $date => $content) {
 				$i += 1;
 			?>
 				<div class="paragraph py-0 mt-3">
