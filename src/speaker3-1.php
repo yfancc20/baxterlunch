@@ -15,7 +15,7 @@
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	
 <?php include_once 'components/head.php'; ?>

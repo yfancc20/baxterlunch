@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	
 <?php include_once 'components/head.php'; ?>
@@ -13,13 +13,16 @@
 	<div class="wrapper cont">
 		<div class="content">
 			<div class="paragraph">
-				<div class="title">
+				<div class="title-md">
+					Baxter Medical Lunch Symposium
+				</div>
+				<div class="title-md">
 					The Journey to
 				</div>
-				<div class="title">
+				<div class="title-md">
 					High Performance CRRT
 				</div>
-				<div class="title date">
+				<div class="title-md green">
 					22<span class="super">nd</span> Sep 2018
 				</div>
 				<p class="text">Taipei Marriott Hotel 5F Junior Ballroom 1</p>
@@ -27,10 +30,10 @@
 			<div class="dot-line"></div>
 
 			<div class="paragraph">
-				<div class="title">
+				<div class="title-md">
 					Meet-the-Expert Sessions
 				</div>
-				<div class="title date">
+				<div class="title-md green">
 					22<span class="super">nd</span> - 23<span class="super">rd</span> Sep 2018
 				</div>
 				<p class="text">Coffee Break | Taipei Marriott Hotel 3F - Salon 3/4</p>

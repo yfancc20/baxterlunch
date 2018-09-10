@@ -1,6 +1,5 @@
 <?php
 	$prev = 'menu.php';
-	$next = 'agenda_2.php';
 
 	$topics = [
 		[
@@ -8,11 +7,11 @@
 			'name' => 'Prof. Mark Marshall'
 		],
 		[
-			'title' => 'How to define clinical excellence of CRRT?',
+			'title' => 'How to Define Clinical Excellence of CRRT?',
 			'name' => 'Prof. Ashita Tolwani'
 		],
 		[
-			'title' => 'Future CRRT.',
+			'title' => 'Future CRRT',
 			'name' => 'Prof. Patrick Honoré'
 		],
 		[
@@ -23,7 +22,7 @@
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	
 <?php include_once 'components/head.php'; ?>
@@ -32,7 +31,7 @@
 
 </head>
 <body>
-	<div class="wrapper agenda">
+	<div class="wrapper agenda no-foot">
 		<div class="content">
 			<div class="paragraph">
 				<div class="title-sm">The Journey to High Performance CRRT</div>
@@ -87,6 +86,8 @@
 			?>
 		</div>
 	</div>
+
+	<?php include_once 'agenda_2.php'; ?>
 
 	<?php include_once 'components/footer.php'; ?>
 </body>

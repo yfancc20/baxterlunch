@@ -19,14 +19,19 @@ $footer-height: 85px;
 	background-repeat: no-repeat;
 }
 
+@font-face {
+    font-family: HelveticaNeue;
+    src: url("../font/HelveticaNeue-CondensedBold.otf") format("opentype");
+}
+
 
 
 /*******************
  * General
  *******************/
 body, html {
-	font-size: 10px;
-	font-family: "Helvetica Narrow", Arial;
+	font-size: 11px;
+	font-family: HelveticaNeue, Arial;
 	width: 100%;
 	height: 100%;
 }
@@ -39,8 +44,7 @@ body, html {
 .title, .title-sm, .title-xs, .title-md {
 	color: $color-header;
 	font-weight: 700;
-	font-size: 2.7rem;
-	letter-spacing: -0.07rem;
+	font-size: 2.45rem;
 	.super {
 		font-size: 1.5rem;
 	}
@@ -53,12 +57,10 @@ body, html {
 }
 .title-xs {
 	font-size: 1.6rem;
-	letter-spacing: -0.04rem;
 }
 .text {
 	font-weight: 700;
 	font-size: 1.5rem;
-	letter-spacing: -0.04rem;
 }
 .text-sm {
 	font-size: 1.3rem;
@@ -90,7 +92,7 @@ body, html {
 	.title {
 		font-size: 2rem;
 		color: white;
-		letter-spacing: 0;
+		letter-spacing: 0.2rem;
 	}
 }
 .dot-line {
@@ -169,7 +171,7 @@ body, html {
 
 		.remind {
 			p {
-				font-size: 1.8rem;
+				font-size: 2rem;
 			}
 
 			h2 {
@@ -191,10 +193,11 @@ body, html {
  *******************/
 .wrapper.cont, .wrapper.agenda {
 	.content {
-		padding: 2rem 0;
+		padding-top: 1rem;
+		padding-bottom: 2rem;
 		.paragraph {
 			padding: 1rem 2rem;
-			.title {
+			.title-md {
 				&.date {
 					color: $color-green;
 				}
@@ -211,14 +214,21 @@ body, html {
 	min-height: calc(100vh - #{$header-height} + 15px);
 	.more {
 		img {
-			height: 5rem;
+			height: 6rem;
 		}
+	}
+	.title {
+		font-size: 2.4rem;
 	}
 }
 
  .wrapper.agenda {
  	@include background("/img/general_bg.jpg", 100% 115%);
  	min-height: calc(100vh - #{$footer-height} + 15px);
+
+ 	&.no-foot {
+ 		min-height: calc(100vh - 15px);
+ 	}
  	.content {
  		padding-bottom: 0;
  		&.top {
@@ -255,14 +265,13 @@ body, html {
  	@include background("/img/general_bg.jpg", 100% 115%);
  	min-height: calc(100vh - #{$footer-height} + 15px);
  	.content {
- 		padding: 2rem;
- 		padding-top: 1rem;
- 		&.top {
-			padding-top: 3rem;
+ 		padding: 1rem 2rem;
+		&.top {
+			padding-top: 1.8rem;
 		}
 		.more {
 			img {
-				width: 100%;
+				width: 120%;
 			}
 		}
 		.bottom-line {
@@ -301,6 +310,15 @@ body, html {
 		}
 		.list {
 			vertical-align: top;
+			& + td {
+  				// text-align: justify;
+  				& p {
+					-webkit-hyphens: auto;
+					-moz-hyphens: auto;
+					-ms-hyphens: auto;
+	  				hyphens: auto;
+  				}
+			}
 		}
  	}
 

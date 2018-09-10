@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	
 <?php include_once 'components/head.php' ?>
@@ -14,6 +14,7 @@
 		<div class="welcome">
 			<img src="img/spin.png">
 			<div class="content text-center">
+				<h3 class="title">Baxter Medical Lunch Symposium</h3>
 				<h3 class="title">The Journey to</h3>
 				<h3 class="title">High Performance CRRT</h3>
 				<br>

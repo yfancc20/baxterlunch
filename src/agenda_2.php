@@ -1,6 +1,4 @@
 <?php
-	$prev = 'agenda.php';
-
 	$topics = [
 		'9.22' => [
 			[
@@ -25,7 +23,7 @@
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	
 <?php include_once 'components/head.php'; ?>
@@ -97,7 +95,5 @@
 			<?php } ?>
 		</div>
 	</div>
-
-	<?php include_once 'components/footer.php'; ?>
 </body>
 </html>

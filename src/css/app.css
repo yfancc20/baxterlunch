@@ -1,12 +1,15 @@
 /*******************
  * Variables
  *******************/
+@font-face {
+  font-family: HelveticaNeue;
+  src: url("../font/HelveticaNeue-CondensedBold.otf") format("opentype"); }
 /*******************
  * General
  *******************/
 body, html {
-  font-size: 10px;
-  font-family: "Helvetica Narrow", Arial;
+  font-size: 11px;
+  font-family: HelveticaNeue, Arial;
   width: 100%;
   height: 100%; }
 
@@ -19,8 +22,7 @@ body, html {
 .title, .title-sm, .title-xs, .title-md {
   color: #17468c;
   font-weight: 700;
-  font-size: 2.7rem;
-  letter-spacing: -0.07rem; }
+  font-size: 2.45rem; }
   .title .super, .title-sm .super, .title-xs .super, .title-md .super {
     font-size: 1.5rem; }
 
@@ -31,13 +33,11 @@ body, html {
   font-size: 1.8rem; }
 
 .title-xs {
-  font-size: 1.6rem;
-  letter-spacing: -0.04rem; }
+  font-size: 1.6rem; }
 
 .text {
   font-weight: 700;
-  font-size: 1.5rem;
-  letter-spacing: -0.04rem; }
+  font-size: 1.5rem; }
 
 .text-sm {
   font-size: 1.3rem; }
@@ -63,7 +63,7 @@ body, html {
   .banner .title {
     font-size: 2rem;
     color: white;
-    letter-spacing: 0; }
+    letter-spacing: 0.2rem; }
 
 .dot-line {
   height: 1px;
@@ -128,7 +128,7 @@ body, html {
     padding-bottom: 18%;
     overflow: hidden; }
     .wrapper.index .info .remind p {
-      font-size: 1.8rem; }
+      font-size: 2rem; }
     .wrapper.index .info .remind h2 {
       font-size: 2.2rem; }
     .wrapper.index .info .box {
@@ -141,10 +141,11 @@ body, html {
  * Cont & Agenda
  *******************/
 .wrapper.cont .content, .wrapper.agenda .content {
-  padding: 2rem 0; }
+  padding-top: 1rem;
+  padding-bottom: 2rem; }
   .wrapper.cont .content .paragraph, .wrapper.agenda .content .paragraph {
     padding: 1rem 2rem; }
-    .wrapper.cont .content .paragraph .title.date, .wrapper.agenda .content .paragraph .title.date {
+    .wrapper.cont .content .paragraph .title-md.date, .wrapper.agenda .content .paragraph .title-md.date {
       color: #64b49c; }
     .wrapper.cont .content .paragraph .text, .wrapper.agenda .content .paragraph .text {
       color: #3173b4; }
@@ -155,13 +156,17 @@ body, html {
   background-repeat: no-repeat;
   min-height: calc(100vh - 85px + 15px); }
   .wrapper.cont .more img {
-    height: 5rem; }
+    height: 6rem; }
+  .wrapper.cont .title {
+    font-size: 2.4rem; }
 
 .wrapper.agenda {
   background-image: url("/img/general_bg.jpg");
   background-size: 100% 115%;
   background-repeat: no-repeat;
   min-height: calc(100vh - 85px + 15px); }
+  .wrapper.agenda.no-foot {
+    min-height: calc(100vh - 15px); }
   .wrapper.agenda .content {
     padding-bottom: 0; }
     .wrapper.agenda .content.top .text {
@@ -188,12 +193,11 @@ body, html {
   background-repeat: no-repeat;
   min-height: calc(100vh - 85px + 15px); }
   .wrapper.speaker .content {
-    padding: 2rem;
-    padding-top: 1rem; }
+    padding: 1rem 2rem; }
     .wrapper.speaker .content.top {
-      padding-top: 3rem; }
+      padding-top: 1.8rem; }
     .wrapper.speaker .content .more img {
-      width: 100%; }
+      width: 120%; }
     .wrapper.speaker .content .bottom-line .dot-line-green {
       position: absolute;
       top: calc(50% - 2.5px);
@@ -220,6 +224,11 @@ body, html {
       width: 100%; }
     .wrapper.speaker-each .content .list {
       vertical-align: top; }
+      .wrapper.speaker-each .content .list + td p {
+        -webkit-hyphens: auto;
+        -moz-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto; }
   .wrapper.speaker-each .speaker-cv img {
     height: 3rem; }
 
