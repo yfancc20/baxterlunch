@@ -26,11 +26,11 @@
 		</div>
 		<div class="container-fluid info">
 			<div class="row">
-				<div class="col-8 remind">
+				<div class="col-6 px-0 remind">
 					<p class="mb-0"><b>Please Scan</b></p>
 					<h2><b>QR CODE</b></h2>
 				</div>
-				<div class="col-4 qr-code">
+				<div class="col-6 px-0 qr-code">
 					<div class="box">
 						<img src="img/qrcode.jpg" class="w-100">
 					</div>

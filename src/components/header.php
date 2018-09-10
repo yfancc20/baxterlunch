@@ -1,5 +1,7 @@
 <div class="header">
-	<div class="logo px-5 text-right">
-		<h1 class="py-4">Baxter</h1>
+	<div class="logo px-4 text-right">
+		<span>
+			<img src="../img/logo.png">
+		</span>
 	</div>
 </div>
