@@ -33,7 +33,7 @@
 				</div>
 				<div class="col-6 px-0 qr-code">
 					<div class="box">
-						<img src="img/qrcode.jpg" class="w-100">
+						<img src="img/qrcode.png" class="w-100">
 					</div>
 				</div>
 			</div>
