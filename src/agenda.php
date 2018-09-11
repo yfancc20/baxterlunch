@@ -34,6 +34,7 @@
 	<div class="wrapper agenda no-foot">
 		<div class="content">
 			<div class="paragraph">
+				<div class="title-sm">Baxter Medical Lunch Symposium</div>
 				<div class="title-sm">The Journey to High Performance CRRT</div>
 				<p class="text">Taipei Marriott Hotel 5F Junior Ballroom 1</p>
 			</div>
@@ -46,7 +47,7 @@
 			</div>
 		</div>
 
-		<div class="content">
+		<div class="content pb-5">
 			<div class="paragraph mt-0">
 				<div class="container-fluid px-0">
 					<div class="row">

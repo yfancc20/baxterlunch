@@ -1,6 +1,7 @@
 <?php
 	$prev = 'speaker_cv.php';
 	$next = 'speaker4-2.php';
+	$topDisplay = [false, true];
 	
 	$name = 'Dr. Ling Zhang, MD';
 	$desc = 'Associate professor, Director of CRRT,<br>Department of nephrology, West China Hospital of Sichuan University';

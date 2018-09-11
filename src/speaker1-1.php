@@ -1,6 +1,7 @@
 <?php
 	$prev = 'speaker_cv.php';
 	$next = 'speaker1-2.php';
+	$topDisplay = [true, false];
 
 	$name = 'Prof. Mark Marshall';
 	$exp1 = [

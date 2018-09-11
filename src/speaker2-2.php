@@ -1,5 +1,6 @@
 <?php
 	$prev = 'speaker2-1.php';
+	$topDisplay = [true, true];
 	
 	$name = 'Prof. Ashita Tolwani';
 	$exp2 = [

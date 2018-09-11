@@ -1,6 +1,7 @@
 <?php
 	$prev = 'speaker_cv.php';
 	$next = 'speaker2-2.php';
+	$topDisplay = [true, true];
 
 	$name = 'Prof. Ashita Tolwani';
 	$exp1 = [

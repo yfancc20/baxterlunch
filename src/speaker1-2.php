@@ -1,5 +1,6 @@
 <?php
 	$prev = 'speaker1-1.php';
+	$topDisplay = [true, false];
 
 	$name = 'Prof. Mark Marshall';
 	$exp2 = [

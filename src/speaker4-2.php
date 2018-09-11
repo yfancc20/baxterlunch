@@ -1,5 +1,6 @@
 <?php
 	$prev = 'speaker4-1.php';
+	$topDisplay = [false, true];
 	
 	$name = 'Dr. Ling Zhang, MD';
 	$exp2 = [

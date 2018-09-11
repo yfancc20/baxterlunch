@@ -1,6 +1,7 @@
 <?php
 	$prev = 'menu.php';
-
+	$topDisplay = [true, true];
+	
 	$speakers = [
 		[
 			'name' => 'Prof. Mark Marshall',
