@@ -1,8 +1,11 @@
 # baxter
+Mobile web page of Baxter's conference.
 
-$900 /hr
+baxter2018.yifan.nctu.me
+(The URL has been expired)
 
-9/8 - 2hr
-9/9 - 14hr
-9/10 - 2hr
-9/11 - 1hr
+---
+
+Due date: 2019/09/15
+Working hours: ?
+
